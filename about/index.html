@@ -42,11 +42,9 @@ This code match the A element with the custom data attribute <em>data-time="0:00
 <br /><br />
 <pre>
 video:24200~a[data-time="0:00:24.200,0:00:24.880"] {
-  
-  -webkit-animation-name    : appear;
-  -webkit-animation-duration: 680ms;
-  -webkit-animation-delay   : 0ms;}
-
+  animation-name    : appear;
+  animation-duration: 680ms;
+  animation-delay   : 24200ms;
 }
 </pre>
 
@@ -54,9 +52,7 @@ Another way to use a :time pseudo class would be to append some content to the V
 
 <pre>
 video:24200::after {
-  
   content: "I love this part of the video !";
-
 }
 </pre>
 <br />
